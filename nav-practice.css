@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.header {
+background-color: #333;
+color: white;
+padding: 15px 20px;
+display: flex;
+flex-direction: column;
+gap: 15px;
+}
+.upwindow{
+     background: linear-gradient(rgb(95, 156, 255), rgb(148, 60, 216));
+    padding:50px;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+
+}   
+.card1{
+    width: 600px;
+    height: 200px;
+    display:flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 30px;
+    border-radius: 10px;
+    flex-direction: row;
+    border: 5px;
+    
+ 
+}
+
+section{
+    padding: 10px;
+    border: 1px solid rgb(220, 220, 220);
+    border-radius: 5px;
+    width: 600px;
+
+
+}
+button{
+    background-color:rgb(111, 111, 222);
+}
+.card1 h3{
+    flex-grow: 1;
+    text-align: left;
+}
+.card1 button{
+    flex: 1 1 150px;
+    align-self: flex-start;
+    padding: 10px;
+
+    border: none;
+    border-radius: 5px;
+}
+.pinkbtn{
+    background-color: rgb(255, 164, 228);
+}
+@media (min-width: 768px) {
+.nav {
+flex-direction: row;
+gap: 15px;
+}
+.nav a {
+background-color: transparent;
+}
+.upwindow {
+flex-direction: row;
+}
+.cards {
+grid-template-columns: repeat(2, 1fr);
+}
+}
+.footer {
+background-color: #333;
+color: white;
+text-align: center;
+padding: 20px;
+}
+.header {
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+}
+/* Desktop (992px и больше) */
+@media (min-width: 992px) {
+.upwindow h1 {
+font-size: 48px;
+}
+.cards {
+grid-template-columns: repeat(3, 1fr);
+}
+.main {
+max-width: 1200px;
+margin: 0 auto;
+}
+}
+/* Large Desktop (1200px и больше) */
+@media (min-width: 1200px) {
+.header,
+.footer {
+padding-left: calc(100% - 1200px) ;
+padding-right: calc(100% - 1200px);
+}
+}
